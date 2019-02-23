@@ -11,13 +11,13 @@ PULPino is an open-source single-core microcontroller system, based on 32-bit RI
 First to use PULPino, clone the repository:
 
 ```bash
-$ git clone https://github.com/pulp-platform/pulpino.git
+$git clone https://github.com/pulp-platform/pulpino.git
 ```
 
 Second you need update a ips files
 
 ```bash
-$ python update-ips.py
+$python update-ips.py
 ```
 
 Now we work in fpga folder to compile and change some files. In fpga/sw edit Makefile, in the line 16 change the git clone by `git clone https://github.com/Xilinx/linux-xlnx.git`, in the u-boot section line 38 change by `git clone https://github.com/Xilinx/u-boot-xlnx.git` and finally in line 71 change by `git clone https://git.busybox.net/buildroot`
@@ -25,7 +25,7 @@ Now we work in fpga folder to compile and change some files. In fpga/sw edit Mak
 Or clone the repository:
 
 ```bash
-$ git clone https://github.com/franderg/PULPino.git
+$git clone https://github.com/franderg/PULPino.git
 ```
 
 
@@ -41,7 +41,7 @@ In fpga folder:
 2. Set the environment variable to select which core you want to synthesize. `setenv USE_ZERO_RISCY 1` and `setenv ZERO_RV32M 1` for zero-riscy, you need install csh program. `apt install csh`
 
 3. ```bash
-   $ make all
+   $make all
    ```
 
    It is possible depending on the version of GNU / Linux that vivado shows an error about awk and gmake, if so, it is solved by doing the following:
