@@ -1,5 +1,7 @@
 # Run PULPino on a ZedBoard 
 
+Original work on https://github.com/pulp-platform/pulpino.git 
+
 <img src="https://raw.githubusercontent.com/pulp-platform/pulpino/master/doc/datasheet/figures/pulpino_logo_inline1.png" width="400px" />
 
 # Introduction
@@ -23,7 +25,7 @@ Now we work in fpga folder to compile and change some files. In fpga/sw edit Mak
 Or clone the repository:
 
 ```bash
-$ git clone ...
+$ git clone https://github.com/franderg/PULPino.git
 ```
 
 
